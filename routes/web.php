@@ -20,20 +20,20 @@ use Illuminate\Support\Facades\Route;
 // home index
 Route::get('/', App\Livewire\Home\Index::class)->name('home.index');
 
-//posts index
+// posts index
 Route::get('/posts', App\Livewire\Posts\Index::class)->name('posts.index');
 
-//posts create
+// posts create
 Route::get('/posts/create', App\Livewire\Posts\Create::class)->name('posts.create');
 
-//posts edit
+// posts edit
 Route::get('/posts/edit/{id}', App\Livewire\Posts\Edit::class)->name('posts.edit');
 
-//armadas index
+// armadas index
 Route::get('/armadas', App\Livewire\Armadas\Index::class)->name('armadas.index');
 
-//armadas create
-// Route::get('/posts/create', App\Livewire\Posts\Create::class)->name('posts.create');
+// armadas create
+Route::get('/armadas/create', App\Livewire\Armadas\Create::class)->name('armadas.create');
 
-//armadas edit
-// Route::get('/posts/edit/{id}', App\Livewire\Posts\Edit::class)->name('posts.edit');
+// armadas edit
+Route::get('/armadas/edit/{id}', App\Livewire\Armadas\Edit::class)->name('armadas.edit');
