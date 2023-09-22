@@ -33,7 +33,7 @@ class Create extends Component
         ]);
 
         //flash message
-        session()->flash('message', 'Data Berhasil Disimpan.');
+        session()->flash('message', 'Data berhasil disimpan');
 
         //redirect
         return redirect()->route('armadas.index');

@@ -22,7 +22,7 @@ class Index extends Component
         Post::destroy($id);
 
         //flash message
-        session()->flash('message', 'Data Berhasil Dihapus.');
+        session()->flash('message', 'Data berhasil dihapus');
 
         //redirect
         return redirect()->route('posts.index');

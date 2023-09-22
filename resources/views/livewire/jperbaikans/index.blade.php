@@ -36,7 +36,7 @@ Data Jenis Perbaikan - Trucking Apps v2
                             </tr>
                             @empty
                             <div class="alert alert-danger">
-                                Data Jenis Perbaikan belum Tersedia.
+                                Data Jenis Perbaikan belum tersedia
                             </div>
                             @endforelse
                         </tbody>

@@ -42,7 +42,7 @@ Data Posts - Belajar Livewire 3 di SantriKoding.com
                             </tr>
                             @empty
                             <div class="alert alert-danger">
-                                Data Post belum Tersedia.
+                                Data Post belum tersedia
                             </div>
                             @endforelse
                         </tbody>

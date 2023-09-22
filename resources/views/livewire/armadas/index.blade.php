@@ -38,7 +38,7 @@ Data Armada - Trucking Apps v2
                             </tr>
                             @empty
                             <div class="alert alert-danger">
-                                Data Armada belum Tersedia.
+                                Data Armada belum tersedia
                             </div>
                             @endforelse
                         </tbody>

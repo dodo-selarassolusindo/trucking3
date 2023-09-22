@@ -22,7 +22,7 @@ class Index extends Component
         Armada::destroy($id);
 
         //flash message
-        session()->flash('message', 'Data Berhasil Dihapus.');
+        session()->flash('message', 'Data berhasil dihapus');
 
         //redirect
         return redirect()->route('armadas.index');

@@ -69,7 +69,7 @@ class Edit extends Component
         }
 
         //flash message
-        session()->flash('message', 'Data Berhasil Diupdate.');
+        session()->flash('message', 'Data berhasil diupdate');
 
         //redirect
         return redirect()->route('posts.index');
