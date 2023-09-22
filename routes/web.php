@@ -13,9 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// home index
+Route::get('/', App\Livewire\Home\Index::class)->name('home.index');
 
 //posts index
 Route::get('/posts', App\Livewire\Posts\Index::class)->name('posts.index');

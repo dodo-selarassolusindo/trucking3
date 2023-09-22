@@ -32,7 +32,8 @@ Data Armada - Trucking Apps v2
                                 <td>{{ $armada->nopol }}</td>
                                 <td class="text-center">
                                     <a href="/armadas/edit/{{ $armada->id }}" wire:navigate class="btn btn-sm btn-primary">EDIT</a>
-                                    <button class="btn btn-sm btn-danger">DELETE</button>
+                                    {{-- <button class="btn btn-sm btn-danger">DELETE</button> --}}
+                                    <button wire:click="destroy({{ $armada->id }})" class="btn btn-sm btn-danger">DELETE</button>
                                 </td>
                             </tr>
                             @empty

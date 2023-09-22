@@ -14,7 +14,7 @@ Data Posts - Belajar Livewire 3 di SantriKoding.com
             @endif
             <!-- end flash message -->
 
-            <a href="/create" wire:navigate class="btn btn-md btn-success rounded shadow-sm border-0 mb-3">ADD NEW POST</a>
+            <a href="/posts/create" wire:navigate class="btn btn-md btn-success rounded shadow-sm border-0 mb-3">ADD NEW POST</a>
             <div class="card border-0 rounded shadow-sm">
                 <div class="card-body">
                     <table class="table table-bordered">
@@ -35,7 +35,7 @@ Data Posts - Belajar Livewire 3 di SantriKoding.com
                                 <td>{{ $post->title }}</td>
                                 <td>{!! $post->content !!}</td>
                                 <td class="text-center">
-                                    <a href="/edit/{{ $post->id }}" wire:navigate class="btn btn-sm btn-primary">EDIT</a>
+                                    <a href="/posts/edit/{{ $post->id }}" wire:navigate class="btn btn-sm btn-primary">EDIT</a>
                                     {{-- <button class="btn btn-sm btn-danger">DELETE</button> --}}
                                     <button wire:click="destroy({{ $post->id }})" class="btn btn-sm btn-danger">DELETE</button>
                                 </td>
