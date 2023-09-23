@@ -7,7 +7,7 @@ Create Armada - Trucking Apps v2
         <div class="col-md-12">
             <div class="card border-0 shadow-sm rounded">
                 <div class="card-body">
-                    <form wire:submit="store" enctype="multipart/form-data">
+                    <form wire:submit="store">
 
                         <div class="form-group mb-4">
                             <label class="fw-bold">MERK</label>

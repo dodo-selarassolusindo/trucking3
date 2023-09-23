@@ -40,3 +40,9 @@ Route::get('/armadas/edit/{id}', App\Livewire\Armadas\Edit::class)->name('armada
 
 // jperbaikans index
 Route::get('/jperbaikans', App\Livewire\Jperbaikans\Index::class)->name('jperbaikans.index');
+
+// jperbaikans create
+Route::get('/jperbaikans/create', App\Livewire\Jperbaikans\Create::class)->name('jperbaikans.create');
+
+// jperbaikans edit
+Route::get('/jperbaikans/edit/{id}', App\Livewire\Jperbaikans\Edit::class)->name('jperbaikans.edit');
