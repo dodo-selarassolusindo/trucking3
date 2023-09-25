@@ -1,5 +1,5 @@
 @section('title')
-Edit Armada - Trucking Apps v2
+Trucking Apps v2 | Edit Armada
 @endsection
 
 <div class="container mt-5 mb-5">

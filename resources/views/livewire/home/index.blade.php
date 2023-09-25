@@ -1,5 +1,5 @@
 @section('title')
-Beranda - Trucking Apps v2
+Trucking Apps v2 | Beranda
 @endsection
 
 <div class="container mt-5 mb-5">

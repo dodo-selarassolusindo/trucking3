@@ -1,5 +1,5 @@
 @section('title')
-Create Jenis Perbaikan - Trucking Apps v2
+Trucking Apps v2 | Create Jenis Perbaikan
 @endsection
 
 <div class="container mt-5 mb-5">

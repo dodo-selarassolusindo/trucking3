@@ -1,5 +1,5 @@
 @section('title')
-Trucking Apps v2 | Create Armada
+Trucking Apps v2 | Create Transaksi Perbaikan
 @endsection
 
 <div class="container mt-5 mb-5">
@@ -10,11 +10,11 @@ Trucking Apps v2 | Create Armada
                     <form wire:submit="store">
 
                         <div class="form-group mb-4">
-                            <label class="fw-bold">MERK</label>
-                            <input type="text" class="form-control @error('merk') is-invalid @enderror" wire:model="merk" placeholder="Masukkan Merk Armada">
+                            <label class="fw-bold">NOMOR</label>
+                            <input type="text" class="form-control @error('nomor') is-invalid @enderror" wire:model="nomor" placeholder="Masukkan Nomor Transaksi Perbaikan">
 
                             <!-- error message untuk merk -->
-                            @error('merk')
+                            @error('nomor')
                             <div class="alert alert-danger mt-2">
                                 {{ $message }}
                             </div>
@@ -22,11 +22,11 @@ Trucking Apps v2 | Create Armada
                         </div>
 
                         <div class="form-group mb-4">
-                            <label class="fw-bold">NOPOL</label>
-                            <input type="text" class="form-control @error('nopol') is-invalid @enderror" wire:model="nopol" placeholder="Masukkan Nopol Armada">
+                            <label class="fw-bold">TANGGAL</label>
+                            <input type="date" class="form-control @error('tanggal') is-invalid @enderror" wire:model="tanggal" placeholder="Masukkan Tanggal Transaksi Perbaikan">
 
                             <!-- error message untuk nopol -->
-                            @error('nopol')
+                            @error('tanggal')
                             <div class="alert alert-danger mt-2">
                                 {{ $message }}
                             </div>

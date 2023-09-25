@@ -26,6 +26,7 @@
                 <a href="/posts" wire:navigate class="navbar-brand">POST</a>
                 <a href="/armadas" wire:navigate class="navbar-brand">ARMADA</a>
                 <a href="/jperbaikans" wire:navigate class="navbar-brand">JENIS PERBAIKAN</a>
+                <a href="/tperbaikans" wire:navigate class="navbar-brand">TRANSAKSI PERBAIKAN</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>

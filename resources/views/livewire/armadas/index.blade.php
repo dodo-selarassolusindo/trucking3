@@ -1,5 +1,5 @@
 @section('title')
-Data Armada - Trucking Apps v2
+Trucking Apps v2 | Data Armada
 @endsection
 
 <div class="container mt-5 mb-5">
@@ -14,7 +14,7 @@ Data Armada - Trucking Apps v2
             @endif
             <!-- end flash message -->
 
-            <a href="/armadas/create" wire:navigate class="btn btn-md btn-success rounded shadow-sm border-0 mb-3">ADD NEW ARMADA</a>
+            <a href="/armadas/create" wire:navigate class="btn btn-md btn-success rounded shadow-sm border-0 mb-3">TAMBAH ARMADA</a>
             <div class="card border-0 rounded shadow-sm">
                 <div class="card-body">
                     <table class="table table-bordered">
