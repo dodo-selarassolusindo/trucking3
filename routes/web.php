@@ -40,6 +40,7 @@ Route::get('/jperbaikans/edit/{id}', App\Livewire\Jperbaikans\Edit::class)->name
 
 // tperbaikans
 // index
-Route::get('/tperbaikans', App\Livewire\Tperbaikans\Index::class)->name('tperbaikans.index');
-Route::get('/tperbaikans/create', App\Livewire\Tperbaikans\Create::class)->name('tperbaikans.create');
-Route::get('/tperbaikans/edit/{id}', App\Livewire\Tperbaikans\Edit::class)->name('tperbaikans.edit');
+// Route::get('/tperbaikans', App\Livewire\Tperbaikans\Index::class)->name('tperbaikans.index');
+// Route::get('/tperbaikans/create', App\Livewire\Tperbaikans\Create::class)->name('tperbaikans.create');
+// Route::get('/tperbaikans/edit/{id}', App\Livewire\Tperbaikans\Edit::class)->name('tperbaikans.edit');
+Route::resource('tperbaikan', App\Http\Controllers\TperbaikanController::class);
