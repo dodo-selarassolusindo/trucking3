@@ -9,6 +9,8 @@ Trucking Apps v2 | Create Transaksi Perbaikan
                 <div class="card-body">
                     <form wire:submit="store">
 
+                        {{-- transaksi perbaikan master --}}
+
                         <div class="form-group mb-4">
                             <label class="fw-bold">NOMOR</label>
                             <input type="text" class="form-control @error('nomor') is-invalid @enderror" wire:model="nomor" placeholder="Masukkan Nomor Transaksi Perbaikan">
@@ -32,6 +34,8 @@ Trucking Apps v2 | Create Transaksi Perbaikan
                             </div>
                             @enderror
                         </div>
+
+                        {{-- transaksi perbaikan detail --}}
 
                         <button type="submit" class="btn btn-md btn-primary">SIMPAN</button>
                         <button type="reset" class="btn btn-md btn-warning">RESET</button>
