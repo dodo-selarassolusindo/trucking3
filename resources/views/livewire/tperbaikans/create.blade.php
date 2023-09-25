@@ -37,6 +37,13 @@ Trucking Apps v2 | Create Transaksi Perbaikan
 
                         {{-- transaksi perbaikan detail --}}
 
+                        {{-- <div class="card-body"> --}}
+                        <div class="form-group mb-4">
+                            <label class="fw-bold">DETAIL PERBAIKAN</label>
+                            {{-- @livewire('products') --}}
+                            @livewire('tperbaikandetails')
+                        </div>
+
                         <button type="submit" class="btn btn-md btn-primary">SIMPAN</button>
                         <button type="reset" class="btn btn-md btn-warning">RESET</button>
 
