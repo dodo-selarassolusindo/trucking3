@@ -1,3 +1,29 @@
+<div>
+    <form action="{{ route('tperbaikan.store') }}" method="POST">
+        @csrf
+
+        <div class="form-group {{ $errors->has('nomor') ? 'has-error' : '' }}">
+            NOMOR
+            <input type="text" name="nomor" class="form-control"
+                   value="{{ old('nomor') }}" required>
+            @if($errors->has('nomor'))
+                <em class="invalid-feedback">
+                    {{ $errors->first('nomor') }}
+                </em>
+            @endif
+        </div>
+
+        <div class="form-group {{ $errors->has('tanggal') ? 'has-error' : '' }}">
+            TANGGAL
+            <input type="date" name="tanggal" class="form-control"
+                   value="{{ old('tanggal') }}">
+            @if($errors->has('tanggal'))
+                <em class="invalid-feedback">
+                    {{ $errors->first('tanggal') }}
+                </em>
+            @endif
+        </div>
+
         <div class="card">
             {{-- <div class="card-header">
                 Detail Transaksi Perbaikan
@@ -62,3 +88,9 @@
                 </div>
             </div>
         </div>
+        <br />
+        <div>
+            <input class="btn btn-primary" type="submit" value="Save Order">
+        </div>
+    </form>
+</div>
