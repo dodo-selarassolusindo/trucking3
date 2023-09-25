@@ -17,4 +17,9 @@ class Tperbaikan extends Model
     protected $fillable = [
         'nomor', 'tanggal'
     ];
+
+    public function tperbaikandetails()
+    {
+    	return $this->belongsToMany(Tperbaikandetail::class);
+    }
 }

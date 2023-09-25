@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('tperbaikandetails', function (Blueprint $table) {
             $table->id();
-            $table->integer('tperbaikan');
-            $table->integer('jperbaikan');
-            $table->integer('armada');
+            $table->foreignId('tperbaikan_id')->constrained();
+            $table->foreignId('jperbaikan_id')->constrained();
+            $table->foreignId('armada_id')->constrained();
             $table->float('jumlah', 13, 2);
             $table->text('noted');
             $table->timestamps();

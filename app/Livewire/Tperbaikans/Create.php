@@ -17,6 +17,13 @@ class Create extends Component
     #[Rule('required', message: 'Masukkan Tanggal Transaksi Perbaikan')]
     public $tanggal;
 
+    // public $tperbaikandetails = [];
+
+    public function mount($tperbaikandetails)
+    {
+        // code...
+    }
+
     /**
      * store
      *
@@ -25,6 +32,10 @@ class Create extends Component
     public function store()
     {
 
+        // echo '<pre>';
+        // print_r($request);
+        // echo '</pre>';
+
         $this->validate();
 
         // create tperbaikan
@@ -32,6 +43,16 @@ class Create extends Component
             'nomor' => $this->nomor,
             'tanggal' => $this->tanggal
         ]);
+
+        foreach ($this->tperbaikandetails as $tperbaikandetail) {
+            // echo '<pre>';
+            // print_r($tperbaikandetail);
+            // echo '</pre>';
+            Tperbaikan::tperbaikandetails()->attach(
+                ['armada' => $tperbaikandetail['armada']],
+                ['jperbaikan' => $tperbaikandetail['jperbaikan']]
+            );
+        }
 
         // flash message
         session()->flash('message', 'Data berhasil disimpan');
